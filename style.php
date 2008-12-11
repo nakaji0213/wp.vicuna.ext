@@ -6,12 +6,12 @@ require_once($dir.'wp-config.php');
 
 $config = get_option('vicuna_config');
 
-$skin = $config['skin'];
-
 if (!isset($config['skin'])) {
 	$config['skin'] = 'style-smartCanvas';
 	update_option('vicuna_config', $config);
 }
+$skin = $config['skin'];
+
 $multi = $_GET['multi'];
 
 $eye_catch = $config['eye_catch'];
