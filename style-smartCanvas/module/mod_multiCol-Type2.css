@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+/*
+@prefix : <http://purl.org/net/ns/doas#> .
+<> a :CSSstylesheet;
+ :title "Vicuna - Multi Column Type2 Module";
+ :created "2008-04-10";
+ :release [:revision "1.0"; :created "2008-04-10"];
+ :author [:name "wu"; :homepage <http://vicuna.jp/>; :mbox "3ping.org@gmail.com"];
+ :license <http://creativecommons.org/licenses/by/3.0/>;
+ :description "本文エリアが左に置かれる3カラムレイアウトモジュール - 900Fixed";
+ :note "
+ 	このモジュールが有効の時、ページの表示幅は900px(最優先)の固定幅になります。
+ 	mod_multiCol-Type1との併用はできませんので必ず一方だけ読み込ませてください。
+	また、このレイアウトを有効にするには、ページのbody要素のクラスを multi に変更してください。
+	[←★→]マークのついた指定を全て反転させることでカラム位置の左右入れ替えが可能です。
+	" .
+*/
+
+/*======================================
+
+	Multi Column TYPE2
+	┏━━┓┌┐┌┐
+	┃　　┃││││
+	┗━━┛└┘└┘
+	
+=======================================*/
+
+/*--------------------------------------
+	1-1.Common Style
+---------------------------------------*/
+
+body {
+	margin: 0 5px;
+}
+
+div#header,
+div#content,
+div#footer {
+	width: 900px;
+	_width: 912px; /* width + side border-width */
+	min-width: none;
+	max-width: none;
+}
+
+/*--------------------------------------
+	1-2.Style for body.multi
+---------------------------------------*/
+
+/* 1-2-1. div#main
+-----------------------------*/
+
+body.multi div#main {
+	float: left;
+}
+
+/* 1-2-2. div#utilities
+-----------------------------*/
+
+body.multi div#utilities {
+	padding: 0;
+	display: inline; /* for IE */
+	float: right;
+	clear: right;
+	width: 400px;
+}
+
+body.multi div#utilities dl.navi {
+	float: right; /* [←★→] */
+	width: 200px;
+	display: inline; /* for IE */
+}
+
+body.multi div#utilities dl.others {
+	display: inline; /* for IE */
+	width: 200px;
+	float: right; /* [←★→] */
+}
+
+/* Main Column Border ------
+----------------------------*/
+
+body.multi div#main {
+	border-right: 1px solid; /* [←★→] */
+	border-bottom: 1px solid;
+	margin-right: -1px; /* [←★→] */
+	width: 499px;
+	_width: 500px;
+}
+
+/*--------------------------------------
+	1-3.Style for body.double
+---------------------------------------*/
+
+/* 1-3-1.div#main
+-----------------------------*/
+
+body.double div#main {
+	margin: 0;
+	width: 700px;
+	float: left; /* [←★→] */
+}
+
+/* 1-3-2.div#utilities
+-----------------------------*/
+
+body.double div#utilities {
+	width: 199px;
+	_width: 200px;
+	float: right; /* [←★→] */
+	clear: right; /* [←★→] */
+}
+
+/* Main Column Border ------
+----------------------------*/
+
+body.double div#main {
+	border-right: 1px solid; /* [←★→] */
+	margin-right: -1px; /* [←★→] */
+}
+
+
+/*--------------------------------------
+	Others
+---------------------------------------*/
+
+/* Thumbnail */
+
+div#utilities ul.thumb li {
+	width: 85px;
+}

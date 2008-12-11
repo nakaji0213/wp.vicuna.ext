@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/*
+@prefix : <http://purl.org/net/ns/doas#> .
+<> a :CSSstylesheet;
+ :title "Vicuna - Eye Catch Mini Module";
+ :created "2008-04-10";
+ :release [:revision "1.0"; :created "2008-04-10"];
+ :author [:name "wu"; :homepage <http://vicuna.jp/>; :mbox "3ping.org@gmail.com"];
+ :license <http://www.opensource.org/licenses/mit-license.php>;
+ :description "ページのサイドバー上部に任意の画像を読み込むモジュール";
+ :note "
+	読み込まれる画像は style-xxx/images/eyeCatch/mini.png です。
+ 	このモジュールが有効の時、ページの表示幅は800pxの固定幅になります。
+	" .
+*/
+
+/*======================================
+
+	Eye Catch [Mini] image Module
+	
+=======================================*/
+
+/*--------------------------------------
+	1-1.Style for All
+---------------------------------------*/
+
+div#header,
+div#content,
+div#footer {
+	width: 800px;
+	_width: 812px; /* for IE (width + side border-width)*/
+	min-width: none;
+	max-width: none;
+}
+
+div#header {
+	border-bottom: none;
+}
+
+/*--------------------------------------
+	1-2.Style for body.double
+---------------------------------------*/
+
+body.double div#main {
+	width: 570px;
+}
+
+body.double div#utilities {
+	padding-top: 240px;
+	width: 230px;
+	background-image: url(../images/eyeCatch/mini.png);
+	background-repeat: no-repeat;
+}
+
+/*--------------------------------------
+	1-3.Style for body.multi
+---------------------------------------*/
+
+body.multi dl.navi {
+	padding-top: 245px!important;
+	background-image: url(../images/eyeCatch/mini.png);
+	background-repeat: no-repeat;
+}
+
+/*--------------------------------------
+	Others
+---------------------------------------*/
+
+div#utilities ul.thumb li {
+	width: 100px;
+}

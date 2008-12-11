@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/*
+@prefix : <http://purl.org/net/ns/doas#> .
+<> a :CSSstylesheet;
+ :title "Vicuna - Eye Catch Header Module";
+ :created "2008-04-10";
+ :release [:revision "1.0"; :created "2008-04-10"];
+ :author [:name "wu"; :homepage <http://vicuna.jp/>; :mbox "3ping.org@gmail.com"];
+ :license <http://www.opensource.org/licenses/mit-license.php>;
+ :description "ページの上部に任意の画像を読み込むモジュール";
+ :note "
+	読み込まれる画像は style-xxx/images/eyeCatch/header.png です。
+ 	このモジュールが有効の時、ページの表示幅は800pxの固定幅になります。
+	" .
+*/
+
+/*======================================
+
+	Eye Catch [Header] image Module
+	
+=======================================*/
+
+/*--------------------------------------
+	1-1.Style for All
+---------------------------------------*/
+
+body {
+	margin: 0 10px;
+}
+
+div#header,
+div#content,
+div#footer {
+	width: 800px;
+	_width: 812px; /* for IE (width + side border-width)*/
+	min-width: none;
+	max-width: none;
+}
+
+div#header {
+	padding-top: 159px; /* img height - 21px(div#header padding bottom) */
+	_height: 180px;  /* for IE */
+	border-bottom: none;
+	position: relative;
+	background-image: url(../images/eyeCatch/header.png);
+	background-repeat: no-repeat;
+}
+
+/* title */
+
+div#header p.siteName {
+	position: absolute;
+	top: 30px;
+	left: 20px;
+}
+
+div#header p.siteName a:link,
+div#header p.siteName a:visited {
+	color: #fff;/* Set Title Color */
+}
+
+/* Description */
+
+div#header p.description {
+	position: absolute;
+	top: 80px;
+	left: 20px;
+	color: #fff; /* Set Description Color */
+}
+
+/*--------------------------------------
+	Others
+---------------------------------------*/
+
+div#header ul#globalNavi {
+	margin-top: 0;
+}
+
+div#utilities ul.thumb li {
+	width: 100px;
+}

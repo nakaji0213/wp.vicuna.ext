@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/*
+@prefix : <http://purl.org/net/ns/doas#> .
+<> a :CSSstylesheet;
+ :title "Vicuna - Smart Canvas Style - Import File;
+ :created "2008-04-10";
+ :release [:revision "1.0"; :created "2008-04-10"];
+ :author [:name "wu"; :homepage <http://vicuna.jp/>; :mbox "3ping.org@gmail.com"];
+ :license <http://www.opensource.org/licenses/mit-license.php>;
+ " .
+*/
+
+@import url(1-element.css);
+@import url(2-class.css);
+@import url(3-context.css);
+@import url(4-layout.css);
+@import url(5-module.css);

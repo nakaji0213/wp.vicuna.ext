@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/*
+@prefix : <http://purl.org/net/ns/doas#> .
+<> a :CSSstylesheet;
+ :title "Vicuna - Calendar Style Module";
+ :created "2008-04-10";
+ :release [:revision "1.0"; :created "2008-04-10"];
+ :author [:name "wu"; :homepage <http://vicuna.jp/>; :mbox "3ping.org@gmail.com"];
+ :license <http://www.opensource.org/licenses/mit-license.php>;
+ :description "カレンダーHTML用のスタイル定義";
+ :note "このモジュールを有効にする前に、カレンダー用のHTMLが追加されている必要があります。" .
+*/
+
+/*======================================
+
+	Calendar Style Module
+	
+=======================================*/
+
+/*--------------------------------------
+	1.Structure
+---------------------------------------*/
+
+div#utilities dl dd table.calendar {
+	font-size: 85%;
+	border: none;
+	border-top: 1px solid #eee;
+	border-left: 1px solid #eee;
+}
+
+/*--------------------------------------
+	2.前後の月へのリンク
+---------------------------------------*/
+
+div#utilities dl dd table.calendar caption {
+	text-align: center;
+	color: #000;
+}
+
+body.double div#utilities dl dd table.calendar caption {
+
+}
+
+div#utilities dl dd table.calendar caption a {
+	padding: 0 5px;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+div#utilities dl dd table.calendar caption a:hover {
+	background-color: #eee;
+}
+
+/*--------------------------------------
+	3.セル
+---------------------------------------*/
+
+div#utilities dl dd table.calendar th,
+div#utilities dl dd table.calendar td {
+	padding: 0;
+	border: none;
+	line-height: 20px;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+	vertical-align: middle;
+}
+
+div#utilities dl dd table.calendar th {
+	background-color: #f5f5f5;
+}
+
+div#utilities dl dd table.calendar td {
+	color: #ccc;
+	height: 2;
+}
+
+/*--------------------------------------
+	4.土日
+---------------------------------------*/
+
+div#utilities dl dd table.calendar th.sun {
+	color: #fff;
+	background-color: #ccc;
+}
+
+div#utilities dl dd table.calendar th.sat {
+	color: #fff;
+	background-color: #ccc;
+}
+
+/*--------------------------------------
+	5.セル内のリンク
+---------------------------------------*/
+
+div#utilities dl dd table.calendar td a {
+	display: block;
+	height: 2;
+	text-decoration: none;
+}
+
+div#utilities dl dd table.calendar td a:link {
+	color: #000;
+	background-color: #eee;
+}
+
+div#utilities dl dd table.calendar td a:visited {
+	color: #000;
+}
+
+div#utilities dl dd table.calendar td a:hover {
+	color: #fff;
+	background-color: #333;
+}

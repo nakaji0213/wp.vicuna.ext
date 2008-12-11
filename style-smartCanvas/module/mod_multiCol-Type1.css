@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/*
+@prefix : <http://purl.org/net/ns/doas#> .
+<> a :CSSstylesheet;
+ :title "Vicuna - Multi Column Type1 Module";
+ :created "2008-04-10";
+ :release [:revision "1.0"; :created "2008-04-10"];
+ :author [:name "wu"; :homepage <http://vicuna.jp/>; :mbox "3ping.org@gmail.com"];
+ :license <http://www.opensource.org/licenses/mit-license.php>;
+ :description "本文エリアが中央に置かれる3カラムレイアウトモジュール - 900Fixed";
+ :note "
+ 	dl.othersの内容をdl.naviカラムより多くすることはできません。Multi Column Type2を利用してください。
+ 	このモジュールが有効の時、ページの表示幅は900px(最優先)の固定幅になります。
+ 	mod_multiCol-Type2との併用はできませんので必ず一方だけ読み込ませてください。
+	このレイアウトを有効にするには、ページのbody要素のクラスを multi に変更してください。
+	[←★→]マークのついた指定を全て反転させることでカラム位置の左右入れ替えが可能です。
+	" .
+*/
+
+/*======================================
+
+	Multi Column TYPE1 900Fixed
+	┌┐┏━━┓┌┐
+	││┃　　┃││
+	└┘┗━━┛└┘
+	
+=======================================*/
+
+/*--------------------------------------
+	1-1. Style for All
+---------------------------------------*/
+
+body {
+	margin: 0 5px;
+}
+
+div#header,
+div#content,
+div#footer {
+	width: 900px;
+	_width: 912px; /* for IE (width + side boder-width) */
+	min-width: none;
+	max-width: none;
+}
+
+/*--------------------------------------
+	1-2. Style for "body.multi"
+---------------------------------------*/
+
+/* 1-2-1. div#main
+-----------------------------*/
+
+body.multi div#main {
+	margin-right: 200px; /*[←★→]*/
+	float: right; /*[←★→]*/
+	display: inline;
+	width: 500px;
+	min-height: 800px;
+	_height: 800px; /* for IE */
+}
+
+/* 1-2-2. div#utilities
+-----------------------------*/
+
+body.multi div#utilities {
+	float: left; /*[←★→]*/
+	display: inline;
+}
+
+body.multi div#utilities dl.others {
+	position: absolute;
+	top: 0;
+	right: 0; /*[←★→]*/
+	width: 200px;
+}
+
+/* 1-2-3. Comment Form
+-----------------------------*/
+
+body.multi form.post textArea {
+	margin: 0;
+	width: 30em;
+	_width: 350px;
+}
+
+/* Main Column Border ------
+----------------------------*/
+
+body.multi div#main {
+	border: 1px solid;
+	border-top: none;
+}
+
+body.multi div#utilities {
+	width: 198px;
+	_width: 200px; /* for IE (+ border width (2px))*/
+}
+
+/*--------------------------------------
+	1-3. Style for "body.double"
+---------------------------------------*/
+
+body.double div#main {
+	width: 700px;
+	float: right; /*[←★→]*/
+}
+
+body.double div#utilities {
+	width: 200px;
+	float: left; /*[←★→]*/
+	clear: left;
+}
+
+body.double div#utilities dl.navi,
+body.double div#utilities dl.others {
+
+}
+
+/* Main Column Border ------
+----------------------------*/
+
+body.double div#main {
+	border-right: none; /*[←★→]*/
+	border-left: 1px solid; /*[←★→]*/
+	margin-right: 0;
+	margin-left: -1px; /*[←★→]*/
+}
+
+/*--------------------------------------
+	Others
+---------------------------------------*/
+
+/* Thumbnail */
+
+div#utilities ul.thumb li {
+	width: 85px;
+}

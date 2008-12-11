@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/*
+@prefix : <http://purl.org/net/ns/doas#> .
+<> a :CSSstylesheet;
+ :title "Vicuna Smart Canvas Style - Style for Single Column";
+ :created "2008-04-10";
+ :release [:revision "1.01"; :created "2008-04-12"];
+ :author [:name "wu"; :homepage <http://vicuna.jp/>; :mbox "3ping.org@gmail.com"];
+ :license <http://www.opensource.org/licenses/mit-license.php>;
+ :description "シングルカラム時の div#utilities 色彩情報定義ファイル";
+ :note "
+ 	16真数の編集だけでも、スキンイメージを大きく変更できます。
+ 	このファイルで変更できない箇所は、コアCSS、
+	または有効化されたモジュールCSSを直接編集するか、
+	新たにセレクタを追加し、スタイル指定を Override して下さい。
+ ".
+*/
+
+/*=========================================================
+
+	body.single div#utilities (single column)
+	
+=========================================================*/
+
+body.single div#utilities {
+	background-color: #fff;
+}
+
+body.single div#utilities dl {
+
+}
+
+body.single div#utilities dl dt {
+
+}
+
+body.single div#utilities dl dd {
+
+}
+
+body.single div#utilities dl dd li {
+	margin-left: 10px;
+}
+
+/* Nest */
+
+body.single div#utilities dl dd dt {
+
+}
+
+body.single div#utilities dl dd dd {
+
+}
+
+body.single div#utilities dl dd form {
+	margin: 0;
+}
+
+/*---------------
+ dl.navi
+-----------------*/
+
+body.single div#utilities dl.navi {
+	background-color: #fff;
+}
+
+body.single div#utilities dl.navi dt {
+
+}
+
+/*---------------
+ dl.others
+-----------------*/
+
+body.single div#utilities dl.others {
+	background-color: #fff;
+}
+
+body.single div#utilities dl.others dt {
+
+}
+
+/*---------------
+ .freeSpace [?]
+-----------------*/
+
+body.single div#utilities .freeSpace {
+	margin: 1px;
+	background-color: #fff;
+}
+
+body.single div#utilities .freeSpace p,
+body.single div#utilities .freeSpace dl,
+body.single div#utilities .freeSpace ul,
+body.single div#utilities .freeSpace ol,
+body.single div#utilities .freeSpace li {
+	margin: 0.1em 5px;
+}
+
+/*---------------
+ nest
+-----------------*/
+
+body.single div#utilities dl dd dl dt {
+	background-color: #fff;
+}
+
+/*---------------
+ Sidebar Link Color
+-----------------*/
+
+body.single dl.navi a:link,
+body.single dl.others a:link {
+
+}
+
+body.single dl.navi a:visited,
+body.single dl.others avisited {
+
+}
+
+body.single dl.navi a:hover,
+body.single dl.others a:hover {
+
+}
+
+/*---------------
+ Tag Cloud
+-----------------*/
+
+body.single div#utilities ul.tagCloud {
+	margin: 0.8em 10px;
+}
+
+body.single div#utilities ul.tagCloud li {
+	margin: 0;
+}

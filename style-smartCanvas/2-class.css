@@ -1,0 +1,240 @@
+@charset "utf-8";
+
+/*
+@prefix : <http://purl.org/net/ns/doas#> .
+<> a :CSSstylesheet;
+ :title "Vicuna Origin Style - Class";
+ :created "2008-04-10";
+ :release [:revision "1.0"; :created "2008-04-10"];
+ :author [:name "wu"; :homepage <http://vicuna.jp/>; :mbox "3ping.org@gmail.com"];
+ :license <http://www.opensource.org/licenses/mit-license.php>;
+ :description "特定の役割を持った要素へのスタイル定義" .
+*/
+
+/*--------------------------------------
+	.pager
+---------------------------------------*/
+
+/*	ul.pager (Newer|Older)
+-----------------------------*/
+
+ul.pager {
+	text-align: center;
+}
+
+ul.pager li {
+	display: inline;
+}
+
+ul.pager li.newer:before {
+	content: "<< ";
+}
+
+ul.pager li.older:after {
+	content: " >>";
+}
+
+/*	p.pagerNum (1|2|3|4)
+-----------------------------*/
+
+p.pagerNum {
+	text-align: center;
+}
+
+p.pagerNum a {
+	text-decoration: none;
+	border-bottom: none;
+}
+
+p.pagerNum strong {
+
+}
+
+/*--------------------------------------
+	.feed
+---------------------------------------*/
+
+li.atom,
+li.rss {
+	list-style-type: none;
+	list-style-position: outside;
+}
+
+li.atom a,
+li.rss a {
+	padding-left: 20px!important;
+	background-image: url(images/mark/icon_feed.gif)!important;
+	background-repeat: no-repeat;
+	background-position: 0 0.1em;
+}
+
+/*--------------------------------------
+	dl.data
+---------------------------------------*/
+
+dl.data {
+	padding: 0;
+	border-left: 5px solid #ddd;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+
+dl.data dt {
+	margin: 0;
+	padding: 0.3em 0 0.1em 1em;
+	border-top: 1px solid #eee;
+	width: 8em;
+	float: left;
+}
+	
+dl.data dd {
+	margin: 0 0 0 8em;
+	padding: 0.3em 1em;
+	border-left: 1px solid #eee;
+	border-top: 1px solid #eee;
+}
+
+/*--------------------------------------
+	float
+---------------------------------------*/
+
+.img_L {
+	margin-right: 1em!important;
+	margin-top: 1em!important;
+	float: left;
+}
+
+.img_R {
+	margin-left: 1em!important;
+	margin-top: 1em!important;
+	float: right;
+}
+
+.clear {
+	display: block;
+	clear: both;
+}
+
+/*--------------------------------------
+	Photo thumbnail
+---------------------------------------*/
+
+ul.thumb {
+
+}
+
+ul.thumb li {
+	margin: 5px 0 0 5px;
+	border: 1px solid #333;
+	float: left;
+	display: inline;
+	overflow: hidden;
+	width: 70px; /* Pictures height */
+	background-color: #eee;
+}
+
+ul.thumb li a {
+	border: none;
+	text-decoration: none;
+}
+
+ul.thumb li a img {
+
+	border: none;
+}
+
+/*--------------------------------------
+	Headline
+---------------------------------------*/
+
+dl.headline {
+	margin: 0 20px 1em;
+}
+
+dl.headline dt {
+	font-size: 114%;
+	margin-bottom: 0;
+}
+
+dl.headline dt span.date {
+	font-size: 80%;
+}
+
+dl.headline dd {
+	margin: 0 10px 1em 10px;
+}
+
+dl.headline dd ul {
+	margin: 0;
+	padding-bottom: 1.2em;
+	list-style-type: none;
+	list-style-position: outside;
+	border-bottom: 1px solid #eee;
+}
+
+dl.headline dd ul li {
+	margin: 0.3em 5px 0.3em 0;
+	display: inline;
+	font-size: 92%;
+}
+
+dl.headline dd ul li.author span.name {
+
+}
+
+dl.headline dd ul li.category a,
+dl.headline dd ul li.tag a {
+	text-decoration: none;
+}
+
+dl.headline dd ul li.tag a {
+
+}
+
+dl.headline dd ul li.textBody {
+	display: block;
+	font-size: 100%;
+}
+
+/*--------------------------------------
+	.admin
+---------------------------------------*/
+
+.admin a {
+	padding: 0 10px 0 25px;
+	text-decoration: none;
+	color: #f65472;
+	background: url(images/mark/icon_edit.gif) 5px 3px no-repeat;
+}
+
+.admin a:hover {
+	color: #953844;
+}
+
+/*--------------------------------------
+	clearFix
+---------------------------------------*/
+
+div#utilities,
+.textBody,
+ul.flip,
+ul.thumb {
+	_height: 1px;
+	min-height: 1px;
+/* for MacIE5 \*//*/
+	height: auto;
+	overflow: hidden;
+/* end */
+}
+
+div#utilities:after,
+.textBody:after,
+ul.flip:after,
+ul.thumb:after {
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	display: block;
+	clear: both;
+}
+

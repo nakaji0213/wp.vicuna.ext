@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+/*
+@prefix : <http://purl.org/net/ns/doas#> .
+<> a :CSSstylesheet;
+ :title "Vicuna Smart Canvas Style - Layout";
+ :created "2008-04-10";
+ :release [:revision "1.0"; :created "2008-04-10"];
+ :author [:name "wu"; :homepage <http://vicuna.jp/>; :mbox "3ping.org@gmail.com"];
+ :license <http://www.opensource.org/licenses/mit-license.php>;
+ :description "
+ 	context.cssからレイアウトに関するスタイルを抜き出したモジュール
+	[←★→]マークのついた指定を全て反転させることでカラム位置の左右入れ替えが可能です。
+	";
+ :note "
+ 	Outline
+		4-1.containers
+			4-2.[Sngle column]
+				4-2-1.div#utilities
+			4-3.[Double column]
+				4-3-1.div#main
+				4-3-2.div#utilities" .
+*/
+
+/*======================================
+
+	4-1.Containers Layout
+	
+=======================================*/
+
+body {
+	text-align: center; /* Centering for IE6 */
+}
+
+div#header,
+div#content,
+div#footer {
+	margin: 0 auto;
+	text-align: left;
+}
+
+div#utilities dl.navi,
+div#utilities dl.others {
+
+}
+
+/*--------------------------------
+	Side Border
+--------------------------------*/
+
+div#header,
+div#content {
+	border-left: 6px solid;
+	border-right: 6px solid;
+}
+	
+/*======================================
+
+	4-2. [Sngle column]
+	Style for body class="single"
+	
+=======================================*/
+
+body.single ul#flip1 {
+	margin: 1em 10px;
+	position: absolute;
+	right: 0;
+	top: -1px;
+}
+
+body.single div#main p.topicPath {
+	margin-right: 7em;
+}
+
+/*--------------------------------------
+	4-2-1. div#utilities
+---------------------------------------*/
+
+body.single div#utilities {
+	margin-top: 1em;
+	padding: 1.2em 0;
+}
+
+body.single div#utilities dl {
+
+}
+
+body.single div#utilities dl dt {
+	margin: 0 10px 0;
+}
+
+body.single div#utilities dl dd {
+	margin: 0 10px 1em;
+}
+
+body.single div#utilities dl dd ul {
+	margin: 0;
+}
+
+body.single div#utilities dl dd dt {
+	margn: 0;
+	padding: 0 0 0.3em 0;
+}
+
+body.single div#utilities dl dd dd {
+	border: none;
+	background-image: none;
+}
+
+body.single div#utilities dl dd form {
+	margin: 0 10px;
+}
+
+body.single div#utilities dl dd form fieldset {
+	padding: 0.1em 10px;
+}
+
+/* navi */
+body.single #utilities dl.navi {
+	margin-left: 1%;
+	float: left;
+	width: 49%;
+	display: inline; /* for IE6 */
+}
+
+body.single #utilities dl.navi dt {
+
+}
+
+/* others */
+
+body.single #utilities dl.others {
+	margin-right: 1%;
+	float: right;
+	clear: right;
+	width: 49%;
+	display: inline; /* for IE6 */
+}
+
+/*======================================
+
+	4-3. [Double column] body.double 
+	Style for body class="double"
+	[←★→]マークのついた指定を反転させることでカラムの位置入れ替えが可能
+	
+=======================================*/
+
+/*--------------------------------------
+	4-3-1. div#main
+---------------------------------------*/
+
+body.double div#main {
+	float: left; /* [←★→] */
+	width: 70%;
+}
+
+/* Main Column Border -------------------------
+本文とサイドバーを線で区切るための処理です。
+ブラウザ間の差異を埋めています。
+IE7が普及するまで辛抱強くいきます。
+----------------------------------------------*/
+
+body.double div#main {
+	position: relative;
+	z-index: 1;
+	border-right: 1px solid #eee; /* [←★→] */
+	border-bottom: 1px solid #eee; /* [←★→] */
+	margin-right: -1px; /* [←★→] */
+}
+
+/*--------------------------------------
+	4-3-2. div#utilities
+---------------------------------------*/
+
+body.double div#utilities {
+	float: left; /* [←★→] */
+	clear: right; /* [←★→] */
+	width: 30%;
+}

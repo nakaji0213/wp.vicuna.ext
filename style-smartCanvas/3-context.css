@@ -1,0 +1,537 @@
+@charset "utf-8";
+
+/*
+@prefix : <http://purl.org/net/ns/doas#> .
+<> a :CSSstylesheet;
+ :title "Vicuna Smart Canvas Style - Context";
+ :created "2008-04-10";
+ :release [:revision "1.0"; :created "2008-04-07"];
+ :author [:name "wu"; :homepage <http://vicuna.jp/>; :mbox "3ping.org@gmail.com"];
+ :license <http://www.opensource.org/licenses/mit-license.php>;
+ :description "文脈によって変わるスタイル定義";
+ :note "
+ 	Outline
+		3-1.div#header
+		3-2.div#content
+		3-3.div#main
+		3-4.div#utilities
+		3-5.div#footer" .
+*/
+
+/*======================================
+
+	3-1.div#header
+	
+=======================================*/
+
+div#header {
+	padding: 1px 0 21px;
+}
+
+/*--------------------------------------
+	3-1-1. Website Title
+---------------------------------------*/
+
+div#header p.siteName {
+	margin: 25px 28px 0;
+	line-height: 1;
+	font-size: 131%;
+}
+
+div#header p.siteName a {
+	text-decoration: none;
+}
+
+div#header p.siteName a:hover {
+
+}
+
+/*--------------------------------------
+	3-1-2. Description
+---------------------------------------*/
+
+div#header p.description {
+	margin: 0.3em 28px 0;
+	font-size: 93%;
+}
+
+/*======================================
+
+	3-2.div#content
+	
+=======================================*/
+
+div#content {
+	padding-bottom: 1px;
+	position: relative;
+}
+
+div#content p.return {
+	padding: 0.4em 0;
+	clear: both;
+	text-align: right;
+}
+
+body.mainIndex h1 {
+	display: none; /*body.mainIndex */
+}
+
+/*======================================
+
+	3-3. div#main
+	
+=======================================*/
+
+div#main {
+	padding: 1px 0;
+}
+
+/*--------------------------------------
+	3-3-1. Topic Path
+---------------------------------------*/
+
+p.topicPath {
+	margin: 0.7em 30px 1em;
+}
+
+p.topicPath span.current {
+	padding: 0 0.5em;
+}
+
+/*--------------------------------------
+	3-3-2. Flip Navi 1 (Newer | Older)
+---------------------------------------*/
+
+ul#flip1 {
+	margin: 0 25px;
+}
+
+ul#flip1 li {
+	margin: 0;
+	display: inline;
+	font-size: 100%;
+}
+
+ul#flip1 li a {
+	display: block;
+	float: left;
+	line-height: 1;
+	text-decoration: none;
+}
+
+/*--------------------------------------
+	3-3-3. div.entry
+---------------------------------------*/
+
+div.entry {
+	margin: 0.5em 0 2em;
+	padding: 1px 0;
+}
+
+/* 3-3-3-1. Entry Title
+-----------------------------*/
+
+div.entry h2 {
+	margin-bottom: 0;
+}
+
+/*
+moved
+subSkin module
+*/
+
+/* 3-3-3-2. Entry Info 
+-----------------------------*/
+
+div.entry ul.info {
+	margin-top: 0.3em;
+	margin-bottom: 0;
+}
+
+div.entry ul.info li {
+	margin: 0 0.5em 0.1em 0;
+	display: inline;
+	font-size: 85%;
+}
+
+/* 3-3-3-3. Text Body
+-----------------------------*/
+
+div.entry div.textBody {
+	margin: 0.5em 0;
+	padding: 1px 0;
+}
+
+div.entry div.textBody h2 {
+	margin-top: 2em;
+}
+
+/* 3-3-3-4. Continue Reading
+-----------------------------*/
+
+p.continue {
+	margin-bottom: 0;
+}
+
+p.continue a {
+	text-decoration: none;
+}
+
+/* 3-3-3-5. Reaction
+-----------------------------*/
+
+div.entry ul.reaction {
+	margin-top: 0;
+	padding-top: 0.3em;
+	_height: 1px; /* for IE */
+}
+
+div.entry ul.reaction li {
+	margin: 0 10px 0 0;
+	padding-right: 15px;
+	display: inline;
+}
+
+div.entry ul.reaction li a {
+
+}
+
+/* 3-3-3-6. Flip Navi 2 (Newer | Older)
+-----------------------------*/
+
+#flip2 {
+	padding: 0.3em 0;
+}
+
+#flip2 li {
+
+}
+
+#flip2 li a {
+
+}
+
+/* 3-3-3-7. Comment Log
+-----------------------------*/
+
+div#comments {
+	padding: 1px 0;
+}
+
+div#comments h2 {
+
+}
+
+div#comments dl.log {
+
+}
+
+div#comments dl.log dt {
+	margin: 0;
+}
+
+div#comments dl.log dt span.name {
+	margin-right: 0.5em;
+}
+
+div#comments dl.log dt span.date {
+
+}
+
+div#comments dl.log dd {
+	margin: 0 0 0.8em 0;
+}
+
+div#comments dl.log dd p {
+	margin: 0.5em 0 1em 0;
+}
+
+/* 3-3-3-8. Comment Post form
+-----------------------------*/
+
+form.post {
+
+}
+
+form.post dl {
+
+}
+
+form.post dl dt {
+	margin: 0;
+}
+
+form.post dl dd {
+	margin-left: 0;
+	margin-bottom: 0;
+}
+
+form.post dl input {
+	margin: 0;
+}
+
+form.post textArea {
+	margin: 0;
+	width: 90%;
+}
+
+form.post div.action {
+	margin: 0 20px 1em;
+}
+
+form.post div.action input.submit {
+	margin: 0.4em 0;
+}
+
+/* 3-3-3-9. Trackback Log
+-----------------------------*/
+
+div#trackback {
+	margin-top: 3em;
+}
+
+div#trackback h2 {
+
+}
+
+div#trackback dl.log {
+
+}
+
+div#trackback dl.log dt {
+
+}
+
+div#trackback dl.log dd {
+	margin: 0;
+	padding: 0.4em 10px;
+	padding-bottom: 1em;
+}
+
+/* 3-3-3-10. Trackback Info
+-----------------------------*/
+
+div#trackback dl.info {
+
+}
+
+div#trackback dl.info .URL {
+	padding: 0.2em 1em;
+}
+
+/*======================================
+
+	3-4. div#utilities
+	
+=======================================*/
+
+div#utilities {
+
+}
+
+div#utilities dl {
+	margin: 0;
+	padding-top: 5px;
+}
+
+div#utilities dl dt {
+	margin: 0 5px;
+	padding: 0.1em 10px;
+}
+
+div#utilities dl dd {
+	margin: 0 5px;
+	padding: 0.2em 0 0.5em;
+}
+
+div#utilities dl dd ul {
+	margin: 0;
+	list-style-position: inside;
+}
+
+div#utilities li {
+	margin: 0.4em 0 0.4em 5px; 
+}
+
+/* Sub Categories */
+
+div#utilities dl dd ul li ul {
+	list-style-type: disc;
+}
+
+div#utilities dl dd ul li li {
+	margin: 0.3em 0 0 10px;
+}
+
+/*--------------------------------------
+	3-4-1. dl.others
+---------------------------------------*/
+
+/*	3-4-1-1. Search
+---------------------------------------*/
+
+div#utilities dl dd form {
+	margin: 0;
+	border: none;
+}
+
+div#utilities dl dd form fieldset {
+	padding: 0.1em 0;
+	border: none;
+	background-color: transparent;
+}
+
+div#utilities dl dd form legend {
+	display: none;
+}
+
+div#utilities dl dd form input {
+	margin: 0.3em 0;
+}
+
+div#utilities dl dd form input.inputField {
+	margin-right: 3px;
+}
+
+/*--------------------------------------
+	3-5. div#utilities > elements
+---------------------------------------*/
+
+/*	3-5-1. dd > p
+-----------------------------*/
+
+div#utilities dl dd p {
+	margin: 0.2em 10px;
+	line-height: 1.4;
+}
+
+/*	3-5-2. dd > list
+-----------------------------*/
+
+div#utilities dl dd dl {
+	margin: 0;
+}
+
+div#utilities dl dd dl dt {
+	margin: 0.3em 0;
+	font-size: 12px;
+}
+
+div#utilities dl dd dl dt a {
+	text-decoration: none;
+}
+
+div#utilities dl dd dl dd {
+	margin: 0.1em 5px;
+	font-size: 12px;
+}
+
+/*	3-5-3. dd > table
+-----------------------------*/
+
+div#utilities dl dd table {
+	margin: 0.5em 0 0.5em 3%;
+	width: 95%;
+	_width: 90%; /* for IE */
+}
+
+div#utilities dl dd table caption {
+	width: 100%;
+	_padding-bottom: 0.4em;
+}
+
+div#utilities dl dd table th,
+div#utilities dl dd table td {
+	padding: 1px 10px;
+}
+
+/*	3-5-4. dd > Tag Cloud
+-----------------------------*/
+
+div#utilities dl dd ul.tagCloud {
+	margin: 0.5em 5px;
+	padding: 0;
+}
+
+div#utilities dl dd ul.tagCloud li {
+	margin: 0;
+}
+
+div#utilities dl dd ul.tagCloud li a {
+
+}
+
+/*	3-5-5. dd > Photo thumbnail
+-----------------------------*/
+
+div#utilities dl dd ul.thumb {
+
+}
+
+div#utilities dl dd ul.thumb li {
+	margin: 5px 0 0 5px;
+}
+
+div#utilities dl dd ul.thumb li a {
+	padding: 0;
+	background-image: none;
+	border: none;
+}
+
+/*	3-5-6. dd > Centering
+-----------------------------*/
+
+div#utilities dl dd div.center {
+	text-align: center;
+}
+
+/*	3-5-7. dd > Reset Link Style
+-----------------------------*/
+
+div#utilities dl dd .reset {
+	list-style-type: none;
+}
+
+div#utilities dl dd .reset a {
+	padding: 0;
+	background-image: none;
+
+}
+
+/*======================================
+
+	3-6.div#footer
+	
+=======================================*/
+
+div#footer {
+	padding: 0.3em 0 1px;
+}
+
+div#footer ul.support {
+	margin: 0.1em 0;
+	text-align: right;
+}
+
+div#footer ul.support li {
+	margin: 0 0 0 6px;
+	display: inline;
+	font-size: 12px;
+}
+
+div#footer ul.support li a {
+	text-decoration: none;
+}
+
+div#footer li.template a {
+
+}
+
+div#footer li.template a[title]:after {
+	content: " "attr(title);
+}
+
+div#footer address {
+	margin: 0.1em 0 2em;
+	text-align: right;
+}

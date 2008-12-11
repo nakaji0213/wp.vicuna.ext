@@ -1,0 +1,610 @@
+# wp.Vicuna Ext. 用日本語リソース (UTF-8) 
+# Japanese (UTF-8) translation for WordPress
+#
+# Copyright 2008 ma38su.sourceforge.jp
+# このファイルは wp.Vicuna Ext. 本体と同じライセンスのもと配布されています。
+# This file is distributed under the same license as the WordPress package.
+#
+# 最新版は、http://ma38su.sourceforge.jp/を探してください。
+#
+# 誤字脱字誤訳、あるいはよりよい訳などありましたら以下までぜひお知らせください。
+# また、他言語版を作成していただける方も随時募集中です。
+# 連絡先 / Contact: ma38su@gmail.com
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wp.Vicuna ja\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-02-02 06:12+0900\n"
+"PO-Revision-Date: 2008-02-02 06:13+0900\n"
+"Last-Translator: ma38su <ma38su@gmail.com>\n"
+"Language-Team: ma38su <ma38su@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Japanese\n"
+"X-Poedit-Country: JAPAN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: d:\\wp\\themes\\wp.vicuna.ext\n"
+"X-Poedit-SearchPath-0: script\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: script/config.php:47
+msgid "Vicuna Config"
+msgstr "Vicuna Config"
+
+#: script/config.php:48
+msgid "You can customize the vicuna theme."
+msgstr "Vicuna テーマをカスタマイズすることができます。"
+
+#: script/config.php:51
+#: script/config.php:108
+#: script/layout.php:76
+#: script/layout.php:89
+msgid "Save Changes &raquo;"
+msgstr "変更を保存する &raquo;"
+
+#: script/config.php:54
+msgid "Skin"
+msgstr "スキン"
+
+#: script/config.php:62
+msgid "Language"
+msgstr "言語"
+
+#: script/dummy.php:2
+msgid "Sunday"
+msgstr "日曜日"
+
+#: script/dummy.php:3
+msgid "Monday"
+msgstr "月曜日"
+
+#: script/dummy.php:4
+msgid "Tuesday"
+msgstr "火曜日"
+
+#: script/dummy.php:5
+msgid "Wednesday"
+msgstr "水曜日"
+
+#: script/dummy.php:6
+msgid "Thursday"
+msgstr "木曜日"
+
+#: script/dummy.php:7
+msgid "Friday"
+msgstr "金曜日"
+
+#: script/dummy.php:8
+msgid "Saturday"
+msgstr "土曜日"
+
+#: script/layout.php:6
+#: script/layout.php:72
+msgid "Layout"
+msgstr "レイアウト"
+
+#: script/layout.php:73
+msgid "You can select layout of your each pages."
+msgstr "各ページのレイアウトを設定することができます。"
+
+#: script/layout.php:79
+msgid "Index Layout"
+msgstr "Index Layout"
+
+#: script/layout.php:80
+msgid "Category Layout"
+msgstr "Category Layout"
+
+#: script/layout.php:81
+msgid "Archive Layout"
+msgstr "Archive Layout"
+
+#: script/layout.php:82
+msgid "Tag Layout"
+msgstr "Tag Layout"
+
+#: script/layout.php:83
+msgid "Single Layout"
+msgstr "Single Layout"
+
+#: script/layout.php:84
+msgid "Page Layout"
+msgstr "Page Layout"
+
+#: script/layout.php:85
+msgid "Search Layout"
+msgstr "Search Layout"
+
+#: script/layout.php:86
+msgid "404 Layout"
+msgstr "404 Layout"
+
+#: script/tag.php:54
+#, php-format
+msgid "%d Entries"
+msgstr "%d Entries"
+
+#: script/tag.php:73
+#: script/tag.php:80
+#: sidebar.php:34
+msgid "Tag Cloud"
+msgstr "Tag Cloud"
+
+#: script/widgets.php:24
+#: script/widgets.php:300
+msgid "Calendar"
+msgstr "Calendar"
+
+#: script/widgets.php:36
+#: script/widgets.php:301
+#: sidebar.php:44
+#: sidebar.php:51
+msgid "Search"
+msgstr "Search"
+
+#: script/widgets.php:41
+#: sidebar.php:48
+#, php-format
+msgid "Search %s"
+msgstr "%s内の検索"
+
+#: script/widgets.php:66
+msgid "Title"
+msgstr "タイトル"
+
+#: script/widgets.php:77
+#: script/widgets.php:302
+#: sidebar.php:64
+msgid "Meta"
+msgstr "Meta"
+
+#: script/widgets.php:97
+#: script/widgets.php:304
+msgid "Recent Reactions"
+msgstr "Recent Reactions"
+
+#: script/widgets.php:117
+#: script/widgets.php:306
+msgid "Recent Comments"
+msgstr "Recent Comments"
+
+#: script/widgets.php:137
+#: script/widgets.php:307
+msgid "Recent Pings"
+msgstr "Recent Pings"
+
+#: script/widgets.php:261
+#: script/widgets.php:285
+msgid "Title:"
+msgstr "タイトル:"
+
+#: script/widgets.php:262
+msgid "Number of reactions to show:"
+msgstr "表示する最近のコメントの数"
+
+#: script/widgets.php:262
+#: script/widgets.php:286
+msgid "(at most 15)"
+msgstr "(少なくとも15件)"
+
+#: script/widgets.php:286
+msgid "Number of pings to show:"
+msgstr "表示する最近のTrackback, Pingbackの数"
+
+#: 404.php:4
+#: 404.php:15
+#: 404.php:16
+#: 404.php:22
+msgid "Error 404"
+msgstr "Error 404"
+
+#: 404.php:8
+#: archive.php:9
+#: category.php:8
+#: page.php:12
+#: search.php:8
+#: single.php:20
+#: tag.php:9
+#, php-format
+msgid "Return to %s index"
+msgstr "%s Indexへ戻る"
+
+#: 404.php:15
+#: 404.php:22
+#: archive.php:15
+#: archive.php:57
+#: category.php:14
+#: category.php:60
+#: index.php:15
+#: index.php:58
+#: page.php:19
+#: page.php:33
+#: search.php:15
+#: search.php:78
+#: single.php:26
+#: single.php:59
+#: tag.php:15
+#: tag.php:56
+msgid "Home"
+msgstr "Home"
+
+#: 404.php:16
+msgid "Not Found"
+msgstr "Not Found"
+
+#: 404.php:19
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr "Sorry, but you are looking for something that isn't here."
+
+#: archive.php:15
+#: archive.php:57
+#: sidebar.php:27
+msgid "Archives"
+msgstr "Archives"
+
+#: archive.php:26
+#: category.php:29
+#: index.php:27
+#: search.php:27
+#: tag.php:25
+msgid "Y-m-d (D)"
+msgstr "Y-m-d (D)"
+
+#: archive.php:29
+#: category.php:32
+#: comments.php:39
+#: index.php:30
+#: page.php:26
+#: search.php:30
+#: single.php:41
+#: tag.php:28
+msgid "Edit"
+msgstr "Edit"
+
+#: archive.php:39
+#: category.php:42
+#: index.php:40
+#: search.php:40
+#: tag.php:38
+#, php-format
+msgid "Comments on %s"
+msgstr "%s へのコメント"
+
+#: archive.php:39
+#: category.php:42
+#: comments.php:34
+#: index.php:40
+#: search.php:40
+#: tag.php:38
+msgid "Comments"
+msgstr "Comments"
+
+#: archive.php:39
+#: archive.php:41
+#: category.php:42
+#: category.php:44
+#: comments.php:34
+#: index.php:40
+#: index.php:42
+#: search.php:40
+#: search.php:42
+#: tag.php:38
+#: tag.php:40
+msgid "Comments (Close)"
+msgstr "Comments (Close)"
+
+#: archive.php:46
+#: category.php:49
+#: index.php:47
+#: search.php:47
+#: tag.php:45
+#, php-format
+msgid "Trackbacks to %s"
+msgstr "%s へのトラックバック"
+
+#: archive.php:46
+#: category.php:49
+#: comments.php:89
+#: index.php:47
+#: search.php:47
+#: tag.php:45
+msgid "Trackbacks"
+msgstr "Trackbacks"
+
+#: archive.php:46
+#: archive.php:48
+#: category.php:49
+#: category.php:51
+#: comments.php:89
+#: index.php:47
+#: index.php:49
+#: search.php:47
+#: search.php:49
+#: tag.php:45
+#: tag.php:47
+msgid "Trackbacks (Close)"
+msgstr "Trackbacks (Close)"
+
+#: category.php:2
+#, php-format
+msgid "%s Archive"
+msgstr "%s Archive"
+
+#: category.php:35
+#: index.php:33
+#: page.php:29
+#: search.php:33
+#: single.php:44
+#: tag.php:31
+msgid "Continue reading"
+msgstr "Continue reading"
+
+#: comments.php:3
+msgid "Please do not load this page directly. Thanks!"
+msgstr "Please do not load this page directly. Thanks!"
+
+#: comments.php:7
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "This post is password protected. Enter the password to view comments."
+
+#: comments.php:36
+#: comments.php:99
+msgid "Edit this comments."
+msgstr "Edit this comments."
+
+#: comments.php:39
+#: comments.php:102
+msgid "y-m-d (D) G:i"
+msgstr "y-m-d (D) G:i"
+
+#: comments.php:49
+msgid "Comment Form"
+msgstr "Comment Form"
+
+#: comments.php:55
+msgid "Logged in"
+msgstr "Logged in"
+
+#: comments.php:56
+msgid "Log out of this account"
+msgstr "Log out of this account"
+
+#: comments.php:56
+msgid "Logout"
+msgstr "Logout"
+
+#: comments.php:58
+msgid "Name"
+msgstr "Name"
+
+#: comments.php:58
+#: comments.php:60
+msgid "required"
+msgstr "必須"
+
+#: comments.php:60
+msgid "Mail address"
+msgstr "Mail address"
+
+#: comments.php:60
+msgid "will not be published"
+msgstr "非公開"
+
+#: comments.php:68
+msgid "Remember personal info"
+msgstr "Remember personal info"
+
+#: comments.php:69
+msgid "Yes"
+msgstr "Yes"
+
+#: comments.php:69
+msgid "Forget Info"
+msgstr "Forget Info"
+
+#: comments.php:69
+msgid "No"
+msgstr "No"
+
+#: comments.php:71
+msgid "Comment"
+msgstr "Comment"
+
+#: comments.php:71
+msgid "You can use some <abbr title=\"Hyper Text Markup Language\">HTML</abbr> tags for decorating."
+msgstr "スタイル指定用の一部の <abbr title=\"Hyper Text Markup Language\">HTML</abbr>タグが使用できます。"
+
+#: comments.php:71
+msgid "You cannot use <abbr title=\"Hyper Text Markup Language\">HTML</abbr> tags"
+msgstr "<abbr title=\"Hyper Text Markup Language\">HTML</abbr>タグは使用できません。"
+
+#: comments.php:72
+msgid "Add Your Comment"
+msgstr "Add Your Comment"
+
+#: comments.php:75
+msgid "Post"
+msgstr "Post"
+
+#: comments.php:92
+msgid "Trackback URL for this entry"
+msgstr "Trackback URL for this entry"
+
+#: comments.php:94
+msgid "Listed below are links to weblogs that reference"
+msgstr "Listed below are links to weblogs that reference"
+
+#: comments.php:95
+#: comments.php:102
+#, php-format
+msgid "%s from %s"
+msgstr "%s from %s"
+
+#: footer.php:1
+msgid "Return to page top"
+msgstr "Return to page top"
+
+#: footer.php:7
+msgid "WordPress Theme"
+msgstr "WordPress Theme"
+
+#: footer.php:9
+#, php-format
+msgid "Copyright &copy; %s All Rights Reserved."
+msgstr "Copyright &copy; %s All Rights Reserved."
+
+#: functions.php:186
+#, php-format
+msgid " %1$s %2$s "
+msgstr " %2$s 年 %1$s "
+
+#: functions.php:327
+msgid "Older Entries"
+msgstr "Older Entries"
+
+#: functions.php:327
+msgid "Newer Entries"
+msgstr "Newer Entries"
+
+#: page.php:25
+#: single.php:38
+msgid "Y-m-d (D) G:i"
+msgstr "Y-m-d (D) G:i"
+
+#: search.php:4
+#: search.php:15
+#: search.php:16
+#: search.php:57
+#: search.php:64
+#: search.php:78
+msgid "Search Result"
+msgstr "Search Result"
+
+#: search.php:17
+#, php-format
+msgid "Result <span class=\"count\">%s</span> for <em>%s</em>"
+msgstr "<em>%2$s</em> の検索結果: <span class=\"count\">%1$s</span>件"
+
+#: search.php:59
+msgid "You did not enter anything to search for. Please try again"
+msgstr "検索キーワードが入力されていません。"
+
+#: search.php:66
+#, php-format
+msgid "Your search - <em>%s</em> -- did not match any documents."
+msgstr "<em>%s</em>というキーワードを含む記事は見つかりませんでした。"
+
+#: search.php:67
+msgid "Suggestions:"
+msgstr "次項のヒントを参考にして、検索キーワードを変えてもう一度検索してみてください。"
+
+#: search.php:69
+msgid "Make sure all words are spelled correctly."
+msgstr "キーワードに誤字や脱字がありませんか ?"
+
+#: search.php:70
+msgid "Try different keywords."
+msgstr "キーワードの意味はそのままで、表現や言い回しを変えてみてください。"
+
+#: search.php:71
+msgid "Try more general keywords."
+msgstr "専門的なキーワードだったり、長い文字列のキーワードだったりした場合は、より一般的で短いキーワードにしてください。"
+
+#: search.php:72
+msgid "Try decreasing the number of keywords."
+msgstr "キーワードを複数指定している場合は、キーワードの数を減らしてみてください。"
+
+#: sidebar.php:6
+msgid "Pages"
+msgstr "Pages"
+
+#: sidebar.php:14
+msgid "Recent Entries"
+msgstr "Recent Entries"
+
+#: sidebar.php:20
+msgid "Categories"
+msgstr "Categories"
+
+#: sidebar.php:50
+msgid "Keyword(s)"
+msgstr "Keyword(s)"
+
+#: sidebar.php:56
+msgid "Feeds"
+msgstr "Feeds"
+
+#: sidebar.php:59
+#: sidebar.php:60
+msgid "All Entries"
+msgstr "All Entries"
+
+#: sidebar.php:61
+msgid "All Comments"
+msgstr "All Comments"
+
+#: sidebar.php:67
+msgid "This page validates as XHTML 1.0 Strict"
+msgstr "This page validates as XHTML 1.0 Strict"
+
+#: sidebar.php:67
+msgid "Valid <abbr title=\"eXtensible HyperText Markup Language\">XHTML</abbr>"
+msgstr "Valid <abbr title=\"eXtensible HyperText Markup Language\">XHTML</abbr>"
+
+#: single.php:29
+#: single.php:49
+msgid "Newer"
+msgstr "Newer"
+
+#: single.php:32
+#: single.php:52
+msgid "Older"
+msgstr "Older"
+
+#: single.php:49
+msgid "a newer entry"
+msgstr "1つ新しい記事"
+
+#: single.php:52
+msgid "an older entry"
+msgstr "1つ古い記事"
+
+#: tag.php:15
+#: tag.php:56
+msgid "Tags"
+msgstr "Tags"
+
+#~ msgid "Powered by %s"
+#~ msgstr "Powered by %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "<p>Your search <em>%s</em> did not match any posts.</p><p>Suggestions:"
+#~ "<ul><li>Make sure all words are spelled correctly.</li><li>Try different "
+#~ "keywords.</li><li>Try more general keywords.</li></ul></p>"
+#~ msgstr ""
+#~ "<p><em>%s</em>というキーワードを含む記事は見つかりませんでした。次項のヒン"
+#~ "トを参考にして、検索キーワードを変えてもう一度検索してみてください。</"
+#~ "p><ul><li>キーワードに誤字や脱字がありませんか ?</li><li>キーワードの意味"
+#~ "はそのままで、表現や言い回しを変えてみてください。</li><li>専門的なキー"
+#~ "ワードだったり、長い文字列のキーワードだったりした場合は、より一般的で短い"
+#~ "キーワードにしてください。</li><li>キーワードを複数指定している場合は、"
+#~ "キーワードの数を減らしてみてください。</li></ul>"
+#~ msgid "Trackback"
+#~ msgstr "Trackback"
+#~ msgid "Return to the page top"
+#~ msgstr "このページの先頭へ戻る"
+#~ msgid "Close"
+#~ msgstr "Close"
+#~ msgid "TrackBack"
+#~ msgstr "トラックバック"
+#~ msgid "Edit."
+#~ msgstr "Edit."
+#~ msgid "Enter any keywords wants to search for."
+#~ msgstr "Enter any keywords wants to search for."
+#~ msgid "Multi Column Type"
+#~ msgstr "マルチカラムの種類"
+

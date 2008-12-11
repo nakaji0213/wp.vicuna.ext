@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/*
+@prefix : <http://purl.org/net/ns/doas#> .
+<> a :CSSstylesheet;
+ :title "Vicuna - Eye Catch Long Module";
+ :created "2008-04-10";
+ :release [:revision "1.01"; :created "2008-04-12"];
+ :author [:name "wu"; :homepage <http://vicuna.jp/>; :mbox "3ping.org@gmail.com"];
+ :license <http://www.opensource.org/licenses/mit-license.php>;
+ :description "ページのコンテンツ上部に任意の画像を読み込むモジュール";
+ :note "
+	読み込まれる画像は style-xxx/images/eyeCatch/long.png です。
+ 	このモジュールが有効の時、ページの表示幅は800pxの固定幅になります。
+	" .
+*/
+
+/*======================================
+
+	Eye Catch [Long] image Module
+	
+=======================================*/
+
+/*--------------------------------------
+	1-1.Style fo All
+---------------------------------------*/
+
+body {
+	margin: 0 10px;
+}
+
+div#header,
+div#content,
+div#footer {
+	width: 800px;
+	_width: 812px; /* for IE (width + side border-width)*/
+	min-width: none;
+	max-width: none;
+}
+
+div#header {
+	border-bottom: none;
+}
+
+div#content {
+	padding-top: 240px;
+	background-image: url(../images/eyeCatch/long.png);
+	background-repeat: no-repeat;
+}
+
+/*--------------------------------------
+	1-2.Style for body.single
+---------------------------------------*/
+
+body.single ul#flip1 {
+	position: static;
+}
+
+body.single div#main p.topicPath {
+	margin-right: 0;
+}
+
+/*--------------------------------------
+	1-3.Style for body.multi
+---------------------------------------*/
+
+body.multi dl.others {
+	top: 240px!important;
+}
+
+/*--------------------------------------
+	Others
+---------------------------------------*/
+
+div#utilities ul.thumb li {
+	width: 105px;
+}

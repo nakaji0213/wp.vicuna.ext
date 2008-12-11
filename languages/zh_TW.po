@@ -1,0 +1,601 @@
+# wp.Vicuna Ext. 用中国語（繁体）リソース (UTF-8) 
+# Chinese zh_TW (UTF-8) translation for WordPress
+#
+# このファイルは wp.Vicuna Ext. 本體と同じライセンスのもと配布されています。
+# This file is distributed under the same license as the WordPress package.
+#
+# 最新版は、http://ma38su.sourceforge.jp/を探してください。
+#
+# 誤字脫字誤譯、あるいはよりよい譯などありましたら以下までぜひお知らせください。
+# また、他言語版を作成していただける方も隨時募集中です。
+# 連絡先 / Contact: ma38su@gmail.com
+# Translator: 余遠青Amos Yu
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wp.Vicuna zh_TW\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-02-02 06:19+0900\n"
+"PO-Revision-Date: 2008-02-02 06:26+0900\n"
+"Last-Translator: ma38su <ma38su@gmail.com>\n"
+"Language-Team: ma38su <ma38su@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Chinese\n"
+"X-Poedit-Country: JAPAN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: d:\\wp\\\\themes\\wp.vicuna.ext\n"
+"X-Poedit-Bookmarks: 68,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-SearchPath-0: script\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: script/config.php:47
+msgid "Vicuna Config"
+msgstr "Vicuna 設定"
+
+#: script/config.php:48
+msgid "You can customize the vicuna theme."
+msgstr "你可以定製自己的 vicuna theme."
+
+#: script/config.php:51
+#: script/config.php:108
+#: script/layout.php:76
+#: script/layout.php:89
+msgid "Save Changes &raquo;"
+msgstr "儲存變更 &raquo;"
+
+#: script/config.php:54
+msgid "Skin"
+msgstr "Skin"
+
+#: script/config.php:62
+msgid "Language"
+msgstr "語系"
+
+#: script/dummy.php:2
+msgid "Sunday"
+msgstr "禮拜天"
+
+#: script/dummy.php:3
+msgid "Monday"
+msgstr "禮拜一"
+
+#: script/dummy.php:4
+msgid "Tuesday"
+msgstr "禮拜二"
+
+#: script/dummy.php:5
+msgid "Wednesday"
+msgstr "禮拜三"
+
+#: script/dummy.php:6
+msgid "Thursday"
+msgstr "禮拜四"
+
+#: script/dummy.php:7
+msgid "Friday"
+msgstr "禮拜五"
+
+#: script/dummy.php:8
+msgid "Saturday"
+msgstr "禮拜六"
+
+#: script/layout.php:6
+#: script/layout.php:72
+msgid "Layout"
+msgstr "版型"
+
+#: script/layout.php:73
+msgid "You can select layout of your each pages."
+msgstr "你可以為每個頁面指定版型"
+
+#: script/layout.php:79
+msgid "Index Layout"
+msgstr "「Index」的版型"
+
+#: script/layout.php:80
+msgid "Category Layout"
+msgstr "「分類」的版型"
+
+#: script/layout.php:81
+msgid "Archive Layout"
+msgstr "「文章彙整」的版型"
+
+#: script/layout.php:82
+msgid "Tag Layout"
+msgstr "「標籤」的版型"
+
+#: script/layout.php:83
+msgid "Single Layout"
+msgstr "「單頁日誌」的版型"
+
+#: script/layout.php:84
+msgid "Page Layout"
+msgstr "「分頁」的版型"
+
+#: script/layout.php:85
+msgid "Search Layout"
+msgstr "「檢索結果」的版型"
+
+#: script/layout.php:86
+msgid "404 Layout"
+msgstr "「404 頁面」的版型"
+
+#: script/tag.php:54
+#, php-format
+msgid "%d Entries"
+msgstr "%d 篇文章"
+
+#: script/tag.php:73
+#: script/tag.php:80
+#: sidebar.php:34
+msgid "Tag Cloud"
+msgstr "標籤雲集"
+
+#: script/widgets.php:24
+#: script/widgets.php:300
+msgid "Calendar"
+msgstr "日曆"
+
+#: script/widgets.php:36
+#: script/widgets.php:301
+#: sidebar.php:44
+#: sidebar.php:51
+msgid "Search"
+msgstr "搜索"
+
+#: script/widgets.php:41
+#: sidebar.php:48
+#, php-format
+msgid "Search %s"
+msgstr "搜索 %s"
+
+#: script/widgets.php:66
+msgid "Title"
+msgstr "標題"
+
+#: script/widgets.php:77
+#: script/widgets.php:302
+#: sidebar.php:64
+msgid "Meta"
+msgstr "其它"
+
+#: script/widgets.php:97
+#: script/widgets.php:304
+msgid "Recent Reactions"
+msgstr "最新互動"
+
+#: script/widgets.php:117
+#: script/widgets.php:306
+msgid "Recent Comments"
+msgstr "最新迴響"
+
+#: script/widgets.php:137
+#: script/widgets.php:307
+msgid "Recent Pings"
+msgstr "最新引用"
+
+#: script/widgets.php:261
+#: script/widgets.php:285
+msgid "Title:"
+msgstr "標題："
+
+#: script/widgets.php:262
+msgid "Number of reactions to show:"
+msgstr "顯示多少數量的互動訊息："
+
+#: script/widgets.php:262
+#: script/widgets.php:286
+msgid "(at most 15)"
+msgstr "(最多15則)"
+
+#: script/widgets.php:286
+msgid "Number of pings to show:"
+msgstr "顯示多少則引用："
+
+#: 404.php:4
+#: 404.php:15
+#: 404.php:16
+#: 404.php:22
+msgid "Error 404"
+msgstr "錯誤的 404 頁面"
+
+#: 404.php:8
+#: archive.php:9
+#: category.php:8
+#: page.php:12
+#: search.php:8
+#: single.php:20
+#: tag.php:9
+#, php-format
+msgid "Return to %s index"
+msgstr "回到 %s 首頁"
+
+#: 404.php:15
+#: 404.php:22
+#: archive.php:15
+#: archive.php:57
+#: category.php:14
+#: category.php:60
+#: index.php:15
+#: index.php:58
+#: page.php:19
+#: page.php:33
+#: search.php:15
+#: search.php:78
+#: single.php:26
+#: single.php:59
+#: tag.php:15
+#: tag.php:56
+msgid "Home"
+msgstr "Home"
+
+#: 404.php:16
+msgid "Not Found"
+msgstr "沒有找到"
+
+#: 404.php:19
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr "抱歉，你想要看的頁面不存在。"
+
+#: archive.php:15
+#: archive.php:57
+#: sidebar.php:27
+msgid "Archives"
+msgstr "文章彙整"
+
+#: archive.php:26
+#: category.php:29
+#: index.php:27
+#: search.php:27
+#: tag.php:25
+msgid "Y-m-d (D)"
+msgstr "Y-m-d (D)"
+
+#: archive.php:29
+#: category.php:32
+#: comments.php:39
+#: index.php:30
+#: page.php:26
+#: search.php:30
+#: single.php:41
+#: tag.php:28
+msgid "Edit"
+msgstr "編輯"
+
+#: archive.php:39
+#: category.php:42
+#: index.php:40
+#: search.php:40
+#: tag.php:38
+#, php-format
+msgid "Comments on %s"
+msgstr "%s的迴響"
+
+#: archive.php:39
+#: category.php:42
+#: comments.php:34
+#: index.php:40
+#: search.php:40
+#: tag.php:38
+msgid "Comments"
+msgstr "迴響"
+
+#: archive.php:39
+#: archive.php:41
+#: category.php:42
+#: category.php:44
+#: comments.php:34
+#: index.php:40
+#: index.php:42
+#: search.php:40
+#: search.php:42
+#: tag.php:38
+#: tag.php:40
+msgid "Comments (Close)"
+msgstr "迴響 (關閉)"
+
+#: archive.php:46
+#: category.php:49
+#: index.php:47
+#: search.php:47
+#: tag.php:45
+#, php-format
+msgid "Trackbacks to %s"
+msgstr "%s的引用"
+
+#: archive.php:46
+#: category.php:49
+#: comments.php:89
+#: index.php:47
+#: search.php:47
+#: tag.php:45
+msgid "Trackbacks"
+msgstr "引用"
+
+#: archive.php:46
+#: archive.php:48
+#: category.php:49
+#: category.php:51
+#: comments.php:89
+#: index.php:47
+#: index.php:49
+#: search.php:47
+#: search.php:49
+#: tag.php:45
+#: tag.php:47
+msgid "Trackbacks (Close)"
+msgstr "引用 (關閉)"
+
+#: category.php:2
+#, php-format
+msgid "%s Archive"
+msgstr "%s的存檔"
+
+#: category.php:35
+#: index.php:33
+#: page.php:29
+#: search.php:33
+#: single.php:44
+#: tag.php:31
+msgid "Continue reading"
+msgstr "進入後閱讀全文"
+
+#: comments.php:3
+msgid "Please do not load this page directly. Thanks!"
+msgstr "請勿直接載入本頁面，謝謝！"
+
+#: comments.php:7
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "本文已經由密碼保護，請於輸入密碼後讀取。"
+
+#: comments.php:36
+#: comments.php:99
+msgid "Edit this comments."
+msgstr "編輯本篇迴響。"
+
+#: comments.php:39
+#: comments.php:102
+msgid "y-m-d (D) G:i"
+msgstr "y-m-d (D) G:i"
+
+#: comments.php:49
+msgid "Comment Form"
+msgstr "留下您的迴響"
+
+#: comments.php:55
+msgid "Logged in"
+msgstr "已由以下人員登入"
+
+#: comments.php:56
+msgid "Log out of this account"
+msgstr "登出這個帳號"
+
+#: comments.php:56
+msgid "Logout"
+msgstr "登出"
+
+#: comments.php:58
+msgid "Name"
+msgstr "姓名"
+
+#: comments.php:58
+#: comments.php:60
+msgid "required"
+msgstr "必填"
+
+#: comments.php:60
+msgid "Mail address"
+msgstr "電郵"
+
+#: comments.php:60
+msgid "will not be published"
+msgstr "不會顯示在網誌上"
+
+#: comments.php:68
+msgid "Remember personal info"
+msgstr "記住個人資訊"
+
+#: comments.php:69
+msgid "Yes"
+msgstr "是"
+
+#: comments.php:69
+msgid "Forget Info"
+msgstr "Forget Info"
+
+#: comments.php:69
+msgid "No"
+msgstr "否"
+
+#: comments.php:71
+msgid "Comment"
+msgstr "迴響"
+
+#: comments.php:71
+msgid "You can use some <abbr title=\"Hyper Text Markup Language\">HTML</abbr> tags for decorating."
+msgstr "可以使用某些指定的<abbr title=\"Hyper Text Markup Language\">HTML</abbr>標籤"
+
+#: comments.php:71
+msgid "You cannot use <abbr title=\"Hyper Text Markup Language\">HTML</abbr> tags"
+msgstr "不允許使用<abbr title=\"Hyper Text Markup Language\">HTML</abbr>標籤"
+
+#: comments.php:72
+msgid "Add Your Comment"
+msgstr "留下您的迴響"
+
+#: comments.php:75
+msgid "Post"
+msgstr "送出"
+
+#: comments.php:92
+msgid "Trackback URL for this entry"
+msgstr "本文的引用網址"
+
+#: comments.php:94
+msgid "Listed below are links to weblogs that reference"
+msgstr "以下為本網誌的連結參考"
+
+#: comments.php:95
+#: comments.php:102
+#, php-format
+msgid "%s from %s"
+msgstr "%s from %s"
+
+#: footer.php:1
+msgid "Return to page top"
+msgstr "回到頁面上方"
+
+#: footer.php:7
+msgid "WordPress Theme"
+msgstr "WordPress Theme"
+
+#: footer.php:9
+#, php-format
+msgid "Copyright &copy; %s All Rights Reserved."
+msgstr "Copyright &copy; %s All Rights Reserved."
+
+#: functions.php:186
+#, php-format
+msgid " %1$s %2$s "
+msgstr " %1$s %2$s "
+
+#: functions.php:327
+msgid "Older Entries"
+msgstr "較舊日誌"
+
+#: functions.php:327
+msgid "Newer Entries"
+msgstr "較新日誌"
+
+#: page.php:25
+#: single.php:38
+msgid "Y-m-d (D) G:i"
+msgstr "Y-m-d (D) G:i"
+
+#: search.php:4
+#: search.php:15
+#: search.php:16
+#: search.php:57
+#: search.php:64
+#: search.php:78
+msgid "Search Result"
+msgstr "檢索結果"
+
+#: search.php:17
+#, php-format
+msgid "Result <span class=\"count\">%s</span> for <em>%s</em>"
+msgstr "約有 <span class=\"count\">%s</span> 項符合 <em>%s</em> 的查詢結果"
+
+#: search.php:59
+msgid "You did not enter anything to search for. Please try again"
+msgstr "您並未輸入任何關鍵字，請再嘗試一遍。"
+
+#: search.php:66
+#, php-format
+msgid "Your search - <em>%s</em> -- did not match any documents."
+msgstr "您所搜尋的 <em>%s</em> 不存在本網誌當中。"
+
+#: search.php:67
+msgid "Suggestions:"
+msgstr "建議您:"
+
+#: search.php:69
+msgid "Make sure all words are spelled correctly."
+msgstr "確認您所輸入的字詞都是正確無誤的。"
+
+#: search.php:70
+msgid "Try different keywords."
+msgstr "試試看其他不同的關鍵字。"
+
+#: search.php:71
+msgid "Try more general keywords."
+msgstr "嘗試輸入更常見的字眼。"
+
+#: search.php:72
+msgid "Try decreasing the number of keywords."
+msgstr "請試著減少關鍵字的數量。"
+
+#: sidebar.php:6
+msgid "Pages"
+msgstr "分頁"
+
+#: sidebar.php:14
+msgid "Recent Entries"
+msgstr "最新日誌"
+
+#: sidebar.php:20
+msgid "Categories"
+msgstr "目錄分類"
+
+#: sidebar.php:50
+msgid "Keyword(s)"
+msgstr "Keyword(s)"
+
+#: sidebar.php:56
+msgid "Feeds"
+msgstr "信息聚合"
+
+#: sidebar.php:59
+#: sidebar.php:60
+msgid "All Entries"
+msgstr "所有日誌"
+
+#: sidebar.php:61
+msgid "All Comments"
+msgstr "所有迴響"
+
+#: sidebar.php:67
+msgid "This page validates as XHTML 1.0 Strict"
+msgstr "本頁面符合 XHTML 1.0 規範"
+
+#: sidebar.php:67
+msgid "Valid <abbr title=\"eXtensible HyperText Markup Language\">XHTML</abbr>"
+msgstr "Valid <abbr title=\"eXtensible HyperText Markup Language\">XHTML</abbr>"
+
+#: single.php:29
+#: single.php:49
+msgid "Newer"
+msgstr "上一頁"
+
+#: single.php:32
+#: single.php:52
+msgid "Older"
+msgstr "下一頁"
+
+#: single.php:49
+msgid "a newer entry"
+msgstr "較新頁"
+
+#: single.php:52
+msgid "an older entry"
+msgstr "較舊頁"
+
+#: tag.php:15
+#: tag.php:56
+msgid "Tags"
+msgstr "標籤"
+
+#~ msgid "Powered by %s"
+#~ msgstr "Powered by %s"
+#~ msgid ""
+#~ "<p>Your search <em>%s</em> did not match any posts.</p><p>Suggestions:"
+#~ "<ul><li>Make sure all words are spelled correctly.</li><li>Try different "
+#~ "keywords.</li><li>Try more general keywords.</li></ul></p>"
+#~ msgstr ""
+#~ "<p>您所搜尋的 <em>%s</em> 不存在本網誌當中。</p><p>建議您:<ul><li>確認您所"
+#~ "輸入的字詞都是正確無誤的。</li><li>試試看其他不同的關鍵字。</li><li>嘗試輸"
+#~ "入更常見的字眼。</li></ul></p>"
+#~ msgid "Trackback"
+#~ msgstr "引用"
+#~ msgid "Close"
+#~ msgstr "關閉"
+#~ msgid "TrackBack"
+#~ msgstr "引用"
+#~ msgid "Return to the page top"
+#~ msgstr "回到頁面上方"
+#~ msgid "Multi Column Type"
+#~ msgstr "多欄位樣式"
+

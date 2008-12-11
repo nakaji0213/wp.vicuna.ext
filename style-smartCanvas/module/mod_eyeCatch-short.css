@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/*
+@prefix : <http://purl.org/net/ns/doas#> .
+<> a :CSSstylesheet;
+ :title "Vicuna - Eye Catch Mini Module";
+ :created "2008-04-10";
+ :release [:revision "1.0"; :created "2008-04-10"];
+ :author [:name "wu"; :homepage <http://vicuna.jp/>; :mbox "3ping.org@gmail.com"];
+ :license <http://www.opensource.org/licenses/mit-license.php>;
+ :description "ページの本文上部に任意の画像を読み込むモジュール";
+ :note "
+	読み込まれる画像は style-xxx/images/eyeCatch/short.png です。
+ 	このモジュールが有効の時、ページの表示幅は800pxの固定幅になります。
+	" .
+*/
+
+/*======================================
+
+	Eye Catch [Short] image Module
+	
+=======================================*/
+
+/*--------------------------------------
+	1-1.Style fo All
+---------------------------------------*/
+
+body {
+	margin: 0 10px;
+}
+
+div#header,
+div#content,
+div#footer {
+	width: 800px;
+	_width: 812px; /* for IE  (width + side border-width)*/
+	min-width: none;
+	max-width: none;
+}
+
+div#header {
+	border-bottom: none;
+}
+
+/*--------------------------------------
+	1-2.Style for body.double
+---------------------------------------*/
+
+body.double div#utilities {
+	width: 230px;
+}
+
+body.double div#main {
+	width: 570px;
+	padding-top: 240px;
+	background-image: url(../images/eyeCatch/short.png);
+	background-repeat: no-repeat;
+}
+
+p.topicPath {
+	_padding-top: 0.7em; /* for IE */
+}
+
+/*--------------------------------------
+	1-2.Style for body.multi
+---------------------------------------*/
+
+body.multi div#main {
+	padding-top: 240px;
+	background-image: url(../images/eyeCatch/short.png);
+	background-repeat: no-repeat;
+}
+
+/*--------------------------------------
+	Others
+---------------------------------------*/
+
+/* Thumbnail */
+
+div#utilities ul.thumb li {
+	width: 100px;
+}

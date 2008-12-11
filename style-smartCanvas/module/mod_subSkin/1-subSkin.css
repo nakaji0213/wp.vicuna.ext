@@ -1,0 +1,685 @@
+@charset "utf-8";
+
+/*
+@prefix : <http://purl.org/net/ns/doas#> .
+<> a :CSSstylesheet;
+ :title "Vicuna Smart Canvas - Default Sub Skin";
+ :created "2008-04-10";
+ :release [:revision "1.0"; :created "2008-04-10"];
+ :author [:name "wu"; :homepage <http://vicuna.jp/>; :mbox "3ping.org@gmail.com"];
+ :license <http://www.opensource.org/licenses/mit-license.php>;
+ :description "レイアウト簡易設定情報と色彩情報定義ファイル";
+ :note "
+ 	16進数の編集だけでも、スキンイメージを大きく変更できます。
+ 	このファイルで変更できない箇所は、コアCSS、
+	または、有効化されたモジュールCSSを直接編集するか、
+	ここに新たにセレクタを追加して上書きして下さい。
+ ".
+*/
+
+/*
+	<body class="single"> のページでは、
+	以下のCSSファイルがdiv#utilities に適用されます。
+	カスタマイズする場合はあわせて編集してください。
+*/
+
+@import url(2-singleUtilities.css);
+
+/*=========================================================
+
+	Layout
+	
+=========================================================*/
+
+body {
+	margin: 0 0; /* margin */
+}
+
+div#header,
+div#content,
+div#footer {
+	width: 90%; /* (example: 50%~100%, 400px~1000px, 60em, etc. )*/
+	min-width: 35em; /* 最小幅 */
+	max-width: 70em; /* 最大幅 */
+}
+
+/*--------------------------------
+	Side Border
+--------------------------------*/
+
+div#header,
+div#content {
+	border-color: #e5e5e5; /* 両サイドボーダーの色 */
+}
+
+/*=========================================================
+
+	General
+	
+=========================================================*/
+
+body {
+	color: #555;
+	background-color: #eee;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+div#header {
+	background-color: #fff;
+	border-bottom: 1px solid #eee;
+}
+
+div#content {
+	background-color: #fff;
+}
+
+div#content div#main {
+	background-color: #fff;
+	border-color: #eee; /* 本文カラム境界線 */
+}
+
+/*---------------
+ Font Size Setting
+ 本文文字サイズ
+-----------------*/
+
+div.textBody {
+	font-size: 100%; /* ( small: 92% | medium: 100% | large: 107% ) */
+}
+
+/* individual font size (個別記事のみ文字サイズを変える) */
+
+body.individual div.textBody {
+	font-size: 100%; /* ( small: 92% | medium: 100% | large: 107% ) */
+}
+
+/*---------------
+ Link Color
+-----------------*/
+
+a:link {
+	color: #666;
+}
+
+a:visited {
+	color: #aaa;
+}
+
+a:hover {
+	color: #000;
+}
+
+/*---------------
+ Website Title
+-----------------*/
+
+div#header p.siteName {
+
+}
+
+div#header p.siteName a {
+	color: #333;
+}
+
+div#header p.siteName a:hover {
+	color: #000;
+}
+
+/*---------------
+ Description
+-----------------*/
+
+div#header p.description {
+	color: #999;
+}
+
+/*---------------
+ Topic Path
+-----------------*/
+
+/* 現在位置 */
+p.topicPath span.current {
+	background-color: #eee;
+}
+
+/*---------------
+ Heading
+-----------------*/
+
+h1 {
+	margin: 0.5em 0 0;
+	padding: 0.5em 30px;
+	color: #666;
+	background-color: #f5f5f5;
+	_height: 1px; /* for IE */
+}
+
+h2 {
+	border-bottom: 1px solid #eee;
+	color: #000;
+}
+
+h3 {
+	color: #666;
+	background-color: #f5f5f5;
+}
+
+/*=========================================================
+
+	div#utilities (Sidebar)
+	
+=========================================================*/
+
+div#utilities dl.navi,
+div#utilities dl.others {
+	background-color: #fff;
+}
+
+div#utilities dl.navi dd,
+div#utilities dl.others dd {
+	background-color: #fff;
+}
+
+/*---------------
+ Utilities Link Color
+-----------------*/
+
+div#utilities a:link {
+
+}
+
+div#utilities a:visited {
+
+}
+
+div#utilities a:hover {
+
+}
+
+/*---------------
+ dl.navi
+-----------------*/
+
+dl.navi {
+
+}
+
+dl.navi dt {
+	color: #333;
+	background-color: #f5f5f5;
+}
+
+/*---------------
+ dl.others
+-----------------*/
+
+dl.others {
+
+}
+
+dl.others dt {
+	color: #333;
+	background-color: #eee;
+}
+
+/*---------------
+ .freeSpace [?]
+-----------------*/
+
+div#utilities .freeSpace {
+	margin: 1px;
+	background-color: #fff;
+}
+
+div#utilities .freeSpace p,
+div#utilities .freeSpace dl,
+div#utilities .freeSpace ul,
+div#utilities .freeSpace ol,
+div#utilities .freeSpace li {
+	margin: 0.1em 5px;
+}
+
+/*---------------
+ nest
+-----------------*/
+
+div#utilities dl.navi dd dl dt,
+div#utilities dl.others dd dl dt {
+	background-color: #fff;
+}
+
+/*---------------
+ Sidebar Link Color
+-----------------*/
+
+dl.navi li a,
+dl.others li a {
+
+}
+
+/*
+
+body class="single"
+div#utilities style
+
+2-singleUtilities.css
+
+*/
+
+/*=========================================================
+
+	Entry
+	
+=========================================================*/
+
+/*---------------
+ Title
+-----------------*/
+
+div.entry h2 {
+
+}
+
+div.entry h2 a {
+	text-decoration: none;
+	color: #000;
+}
+
+div.entry h2 a:visited {
+	color: #000;
+}
+
+div.entry h2 a:hover {
+	color: #666;
+}
+
+/*---------------
+ Text Body
+-----------------*/
+
+div.entry div.textBody dl {
+	border-left: 6px solid #eee;
+	border-bottom: 1px solid #fff;
+}
+
+/*---------------
+ Link img
+-----------------*/
+
+div.textBody a img {
+	border: 3px solid #ccc;
+}
+
+div.textBody a:hover img {
+	border: 3px solid #000;
+}
+
+/*---------------
+ Continue reading
+-----------------*/
+
+p.continue {
+
+}
+
+p.continue a:link,
+p.continue a:visited {
+	padding: 0 10px;
+	color: #fff;
+	background-color: #999;
+}
+
+p.continue a:visited {
+	color: #666;
+	background-color: #eee;
+}
+
+p.continue a:hover {
+	color: #fff;
+	background-color: #000;
+}
+
+/*---------------
+ Reaction
+-----------------*/
+
+div.entry ul.reaction {
+	border-top: 1px solid #eee;
+}
+
+div.entry ul.reaction li {
+	border-right: 2px solid #eee;
+}
+
+div.entry ul.reaction li a {
+	text-decoration: none;
+}
+
+/*---------------
+ Reaction Log (individual)
+ -Comments
+ -Trackbacks
+-----------------*/
+
+div#comments dl.log dt span.name,
+div#trackback dl.log dt span.name {
+	color: #000;
+}
+
+div#comments dl.log dt span.date,
+div#trackback dl.log dt span.date {
+	color: #999;
+}
+
+
+div#comments dl.log dd,
+div#trackback dl.log dd {
+	border-bottom: 1px solid #eee;
+}
+
+div#trackback dl.log {
+	border-left: 5px solid #aaa;
+}
+
+/* Trackback Info */
+
+div#trackback dl.info {
+	border-left: 5px solid #aaa;
+	border-bottom: 1px solid #eee;
+	background-color: #f5f5f5;
+}
+
+div#trackback dl.info .URL {
+	color: #000;
+	background-color: #fff;
+}
+
+/*---------------
+ Flip Pager (Newer - Older)
+-----------------*/
+
+ul#flip1 li a {
+	padding: 0 0.5em;
+	color: #666;
+	background-repeat: no-repeat;
+}
+
+/* Newer Article */
+
+ul#flip1 li.newer a {
+
+}
+
+/* Older Article */
+
+ul#flip1 li.older a {
+	border-left: 1px solid #ccc;
+}
+
+/* On Mouse */
+
+ul#flip1 li a:hover {
+	color: #000;
+}
+ 
+ul#flip1 li.newer a:hover {
+
+}
+
+/* Older Article */
+
+ul#flip1 li.older a:hover {
+
+}
+
+/*---------------
+ Flip Pager2 (Newer - Older)
+-----------------*/
+
+#flip2 {
+	border: 1px solid #eee;
+}
+
+#flip2 li {
+	color: #000;
+}
+
+#flip2 li a {
+
+}
+
+/*---------------
+ Retun to page top
+-----------------*/
+
+p.return a {
+
+}
+
+/*---------------
+ Archive Index
+-----------------*/
+
+p.archives a {
+
+}
+
+/*=========================================================
+
+	Footer
+	
+=========================================================*/
+
+div#footer ul.support li {
+	color: #aaa;
+}
+
+div#footer ul.support li a {
+	color: #999;
+	text-decoration: none;
+}
+
+div#footer li.template a {
+
+}
+
+div#footer address {
+	color: #333;
+}
+
+/*=========================================================
+
+	Elements
+	
+=========================================================*/
+
+em {
+	font-weight: bold;
+}
+
+strong {
+	color: #CC0066;
+}
+
+/*---------------
+ Form
+-----------------*/
+
+fieldset {
+	border: 1px solid #eee;
+	background-color: #f5f5f5;
+}
+
+legend {
+	color: #000;
+	background-color: #fff;
+}
+
+input,
+textarea {
+	border-color: #d4d4d4 #eee #eee #d4d4d4;
+	background-color: #fff;
+}
+
+input:hover,textarea:hover {
+	border-color: #00a0dd;
+}
+
+input:focus,textarea:focus {
+	border-color: #aaa;
+	background-color: #fff;
+}
+
+input.submit {
+	color: #fff;
+	background-color: #666;
+}
+
+input.submit:hover {
+	background-color: #000;
+}
+
+/*---------------
+ Table
+-----------------*/
+
+table {
+	border: 1px solid #cfd3d6;
+	background-color: #fff;
+}
+
+th,
+td {
+	border: 1px solid #efefef;
+	border-color: #efefef #dce0e3 #dce0e3 #efefef;
+}
+
+th {
+	color: #000;
+	background-color: #efefef;
+}
+
+td {
+	border: 1px solid #ddd;
+	background-color: #fff;
+}
+
+/*---------------
+ Pre
+-----------------*/
+
+pre {
+	color: #666;
+	background-color: #f5f5f5;
+}
+
+pre * {
+	color: #444;
+}
+
+pre[title]:before {
+	color: #fff;
+	background-color:  #bbb;
+}
+
+/*---------------
+ Blockquote (引用)
+-----------------*/
+
+blockquote {
+	color: #666;
+	background-color: #f5f5f5;
+}
+
+blockquote * {
+	color: #666;
+}
+
+blockquote[title]:before {
+	color: #000;
+}
+
+blockquote[cite]:after {
+	color: #333;
+}
+
+cite {
+	color: #333;
+}
+
+/*=========================================================
+
+	Others
+	
+=========================================================*/
+
+/*--------------------------------------
+	Tag Cloud
+---------------------------------------*/
+
+ul.tagCloud {
+	margin: 0.5em 30px;
+	padding: 0.5em 10px;
+	line-height: 1;
+	font-size: 13px;
+}
+
+ul.tagCloud li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	font-size: 100%;
+}
+
+ul.tagCloud li a {
+	text-decoration: none;
+}
+
+/* Tag level 1>6 */
+
+ul.tagCloud li.level1 a {
+	font-size: 167%;
+	font-weight: bold;
+	color: #424242;
+}
+
+ul.tagCloud li.level2 a {
+	font-size: 136%;
+	font-weight: bold;
+	color: #5e5e5e;
+}
+
+ul.tagCloud li.level3 a {
+	font-size: 122%;
+	font-weight: bold;
+	color: #7a7a7a;
+}
+
+ul.tagCloud li.level4 a {
+	font-size: 114%;
+	color: #979797;
+}
+
+ul.tagCloud li.level5 a {
+	font-size: 92%;
+	color: #b3b3b3;
+}
+
+ul.tagCloud li.level6 a {
+	font-size: 77%;
+	color: #cfcfcf;
+}
+
+/* On Mouse */
+ul.tagCloud li a:hover {
+	color: #000;
+}
+
+/*--------------------------------
+コメント・トラックバック数など、
+数を表す部分で使われます
+--------------------------------*/
+
+.count {
+
+}

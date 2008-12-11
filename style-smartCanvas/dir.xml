@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Directory name="Root">
+	<Directory name="module">
+		<Directory name="mod_gNavi">
+			<File name="mod_gNavi"/>
+		</Directory>
+		<Directory name="mod_subSkin">
+			<File name="1-subSkin"/>
+			<File name="2-singleUtilities"/>
+		</Directory>
+		<File name="mod_calendar"/>
+		<File name="mod_eyeCatch-header"/>
+		<File name="mod_eyeCatch-long"/>
+		<File name="mod_eyeCatch-mini"/>
+		<File name="mod_eyeCatch-short"/>
+		<File name="mod_multiCol-Type1"/>
+		<File name="mod_multiCol-Type2"/>
+	</Directory>
+	<File name="0-import" />
+	<File name="1-element" />
+	<File name="2-class" />
+	<File name="3-context" />
+	<File name="4-layout" />
+	<File name="5-module" />
+</Directory>
